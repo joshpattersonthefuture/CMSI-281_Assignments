@@ -1,5 +1,5 @@
 /*
-*File: TargetFile.java
+*File: MyFileCopier.java
 *Purpose: A File Reader Writer using Packages
 *Author : Josh Patterson
 *Date   : 9/6/18
@@ -19,7 +19,5 @@ public class MyFileCopier {
     SourceFile source = new SourceFile(src);
     String tgt = source.getContents();
     TargetFile target = new TargetFile(tgt, src + ".copy ");
-    source.closeFile();
-    target.closeFile();
   }
 }
