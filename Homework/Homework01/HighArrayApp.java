@@ -2,6 +2,8 @@
 //Author: Joshua Patterson
 //Date: 9/17/18
 //Purpose: To test the file HighArray.Java
+//Compile Using: javac HighArrayApp.java
+//Run Using: java HighArrayApp
 //Enjoy
 
 public class HighArrayApp {
