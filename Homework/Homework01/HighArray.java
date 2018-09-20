@@ -1,6 +1,5 @@
 //File: HighArray.java
-//Author: Robert LaFore
-//Edited By: Joshua Patterson (noDups Method)
+//Author: Joshua Patterson 
 //Date: 9/17/18
 //Purpose: array insertion, deletion, and location operations
 //Enjoy
