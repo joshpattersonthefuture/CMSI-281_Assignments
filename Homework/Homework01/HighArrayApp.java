@@ -1,5 +1,4 @@
 //File: HighArrayApp.java
-//Author: Robert LaFore
 //Edited by: Joshua Patterson
 //Date: 9/17/18
 //Purpose: To test the file HighArray.Java
