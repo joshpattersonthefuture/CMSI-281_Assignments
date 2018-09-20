@@ -65,7 +65,6 @@ public class HighArray
     }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     public long getMax() {
-
         long max = 0;
         if(nElems != 0) {
             for(int i = 0; i < nElems; i++) {
