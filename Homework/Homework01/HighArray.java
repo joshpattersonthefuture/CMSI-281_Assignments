@@ -7,13 +7,12 @@ public class HighArray
 {
     private long[] a;
     private int nElems;
-
     public HighArray(int max)
     {
         a = new long[max];
         nElems = 0;
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Added Method
+//*********************************************************** Added Method noDups()
     public void noDups() {
        for (int dup=nElems-1; dup>= 1; dup--) {
           for (int j=dup-1; j>=0; j--) {
@@ -23,7 +22,7 @@ public class HighArray
           }
        }
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//***********************************************************
     public boolean find(long searchKey) {
         int j;
         for(j=0; j<nElems; j++) {
@@ -38,12 +37,12 @@ public class HighArray
             return true;
         }
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//***********************************************************
     public void insert(long value)  {
         a[nElems] = value;
         nElems++;
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//***********************************************************
     public boolean delete(long value) {
         int j;
         for(j=0; j<nElems; j++) {
@@ -62,7 +61,7 @@ public class HighArray
             return true;
         }
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//*********************************************************** Added Method getMax()
     public long getMax() {
         long max = 0;
         if(nElems != 0) {
@@ -77,7 +76,7 @@ public class HighArray
             return -1;
         }
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//***********************************************************
     public void display()  {
         for(int j=0; j<nElems; j++) {
             System.out.print(a[j] + " ");
