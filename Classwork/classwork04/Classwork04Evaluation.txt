@@ -1,0 +1,24 @@
+
+Classwork03 Evaluation
+======================
+
+Sorry, but your code doesn't compile.  You have an error
+at line 111 of IntLinkedList.java.  I can't evaluate the
+code if it won't compile.
+
+scores:
+=============================
+IntLinkedList.java
+   insertAt()                 [0 pt]
+   removeAt()                 [0 pt]
+IntLinkeListTester.java
+   added tests to existing    [OPTIONAL 0 pt]
+headers in all files          [2 pt]
+code style                    [1 pt]
+
+total possible points         5 points
+      additional credit       1 point
+
+
+you got 3 out of 5 which is 100% which is an A-plus
+
