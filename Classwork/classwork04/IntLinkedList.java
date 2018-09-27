@@ -75,7 +75,7 @@ public class IntLinkedList {
         }
 
      }
-    //*************************************** Added Method insertAt()
+    //*************************************** Added Method insertAt
 
      public void insertAt(int index, int dataToAdd){
        if(index != 0){
@@ -96,21 +96,14 @@ public class IntLinkedList {
 
     //*************************************** Added method removeAt()
 
-    public void removeAt(int index){
-        if( index >= size || index < 0)  {
-           throw new IllegalArgumentException();
-        }
-        if(index == 0){
-          this.head = head.next;
-          size--;
-        return;
-        }
-        Iterator Remove = new Iterator();
+    public int removeAt(int index) {
+    Iterator backer = getIteratorAt(index-1);
+    Iterator remover = getIteratorAt(index);
 
-        for(int i = 0; i < index - 1; i++){
-          it.next();
-        }
-        Remove.currentNode.next = Remove.currentNode.next.next; ///.. +1?
-        size--;
+    int remove = remover.currentNode.data;
+
+    backer.currentNode.next = backer.currentNode.next.next;
+    size--;
+    return remove;
     }
 }
