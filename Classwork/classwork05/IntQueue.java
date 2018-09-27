@@ -4,6 +4,7 @@
 //Purpose: Implement push, peek and pop functions within a Queue
 //To compile: javac IntQueue.java
 //To Run: java IntQueue
+
 public class IntQueue {
      IntLinkedList myQueue;
      int size = myQueue.getSize()-1;
