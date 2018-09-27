@@ -1,3 +1,11 @@
+
+//File: IntLinkedList.Java
+//Author: Joshua Patterson
+//Date:9/20/18
+//Purpose: Implement removing and inserting index locations in lists
+//To compile: javac IntLinkedlist.java
+//To Run: java IntLinkedList
+
 public class IntLinkedList {
 
      private Node head;
