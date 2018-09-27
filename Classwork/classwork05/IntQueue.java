@@ -1,49 +1,47 @@
 public class IntQueue {
-
      IntLinkedList myQueue;
+     int size = myQueue.getSize()-1;
 
      IntQueue() {
         myQueue = new IntLinkedList();         // constructor
      }
-////////////////////////////////////////////////////////////
-     public void pushQ( int itemToPushQ ) {
-        myQueue.prepend( itemToPushQ );
+
+     public void push( int itemTopush ) {
+        myQueue.prepend( itemTopush );
      }
-////////////////////////////////////////////////////////////
-     public int peekQ() {
-       int size = myQueue.getSize()-1;
-        return myQueue.getIeratorAt(size).getCurrentInt();     // we use the iterator
+
+     public int peek() {
+        return myQueue.getIteratorAt(size).getCurrentInt();     // we use the iterator
      }
-///////////////////////////////////////////////////////////
-     public void popQ() {
-        int size = myQueue.getSize()-1;
-        if (myQueue.getSize() = 0){
-          throw new IllegalArgumentException;
+
+     public int pop() {
+        if (myQueue.getSize() == 0){
+          throw new IllegalArgumentException("Empty");
         }
         return myQueue.removeAt(size);
      }
-///////////////////////////////////////////////////////////
-     publid static void main( String[] args ) {
-        IntQueue testQueue = new IntQueue()
-        testQueue.pushQ( 19 );
-        testQueue.pushQ( 23 );
-        testQueue.pushQ( 29 );
-        testQueue.pushQ( 31 );
-        testQueue.pushQ( 37 );
-        testQueue.pushQ( 41 );
-        testQueue.pushQ( 43 );
-        testQueue.pushQ( 47 );
-        testQueue.pushQ( 51 );
-        testQueue.pushQ( 57 );
-        System.out.println( "The top of the stack: " + testQueue.peekQ() );      // 57
-        System.out.println( "Removing top thing: " + testQueue.popQ() );         // 57 removed
-        System.out.println( "The top of the stack: " + testQueue.peekQ() );      // 51
-        System.out.println( "Removing top thing: " + testQueue.popQ() );         // 51 removed
-        System.out.println( "The top of the stack: " + testQueue.peekQ() );      // 47
-        System.out.println( "Removing top thing: " + testQueue.popQ() );         // 47 removed
-        System.out.println( "The top of the stack: " + testQueue.peekQ() );      // 43
-        testQueue.pushQ( testQueue.popQ() + testQueue.popQ() );
-        System.out.println( "The top of the stack: " + testQueue.peekQ() );      // what'll it be?
+
+     public static void main( String[] args ) {
+        IntQueue testQueue = new IntQueue();
+        testQueue.push( 19 );
+        testQueue.push( 23 );
+        testQueue.push( 29 );
+        testQueue.push( 31 );
+        testQueue.push( 37 );
+        testQueue.push( 41 );
+        testQueue.push( 43 );
+        testQueue.push( 47 );
+        testQueue.push( 51 );
+        testQueue.push( 57 );
+        System.out.println( "The top of the stack: " + testQueue.peek() );      // 57
+        System.out.println( "Removing top thing: " + testQueue.pop() );         // 57 removed
+        System.out.println( "The top of the stack: " + testQueue.peek() );      // 51
+        System.out.println( "Removing top thing: " + testQueue.pop() );         // 51 removed
+        System.out.println( "The top of the stack: " + testQueue.peek() );      // 47
+        System.out.println( "Removing top thing: " + testQueue.pop() );         // 47 removed
+        System.out.println( "The top of the stack: " + testQueue.peek() );      // 43
+        testQueue.push( testQueue.pop() + testQueue.pop() );
+        System.out.println( "The top of the stack: " + testQueue.peek() );      // what'll it be?
      }
 
   }
