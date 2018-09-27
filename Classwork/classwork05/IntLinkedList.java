@@ -1,4 +1,3 @@
-
 //File: IntLinkedList.Java
 //Author: Joshua Patterson
 //Date:9/20/18
