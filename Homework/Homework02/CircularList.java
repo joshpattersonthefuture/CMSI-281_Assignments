@@ -22,7 +22,6 @@ public class CircularList {
         Iterator() {
            currentNode = current;
         }
-
         public void step() {
            if( currentNode == null ) {
               return;
@@ -30,7 +29,6 @@ public class CircularList {
               currentNode = currentNode.next;
            }
         }
-
         public boolean hasNext() {
           return ((currentNode != null) && (currentNode.next != null));
         }
@@ -53,6 +51,8 @@ public class CircularList {
          return it;
        }
   //************************************************
+    //inserts a specific value in the Circular List
+    
      public void insertVal(int value){  //insertion
        //declare Node
        Node insert = new Node(value);
@@ -69,7 +69,9 @@ public class CircularList {
             size++;
      }
 //*************************************************
-    public int searchAt( int index ) {      //searching
+    //searches and finds a specific value at a given index
+    
+    public int searchAt( int index ) {      
             if (size==0) {
                   throw new IllegalArgumentException("empty");
             }
@@ -78,16 +80,21 @@ public class CircularList {
             return searcher.getCurrentInt();
     }
 //*************************************************
-    public void deleteNext() {                     //deletion
-            if (size == 1) {
-                current = null;
-                size--;
-            } else {
-            //declare it
-            Iterator remover = getIteratorAt(getSize()-2);
-            remover.currentNode.next = remover.currentNode.next.next;
-            size--;
-            }
+    public void step() {                  //again
+           current = current.next;
+           }
+    
+    
+    //deletes a specific value from the Circular List
+    
+    public void deleteVal(int value) {
+        for ( int i = 0; i < size; i++ ) {
+            if ( current.next.data == value ) {
+            current.next = current.next.next;
+           size--;
+        }
+           step();
+        }
     }
 //*************************************************
     public int getSize() {    //useless?
