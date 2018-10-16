@@ -3,32 +3,32 @@ public class CircularListTester {
         CircularList myList = new CircularList();
 System.out.println("*********************** Inserting ....");
 
-        myList.insertion( 23 );
-        myList.insertion( 19 );
-        myList.insertion( 17 );
-        myList.insertion( 13 );
-        myList.insertion( 11 );
-        myList.insertion( 7 );
-        myList.insertion( 5 );
-        myList.insertion( 3 );
-        myList.insertion( 2 );
+        myList.insertVal( 23 );
+        myList.insertVal( 19 );
+        myList.insertVal( 17 );
+        myList.insertVal( 13 );
+        myList.insertVal( 11 );
+        myList.insertVal( 7 );
+        myList.insertVal( 5 );
+        myList.insertVal( 3 );
+        myList.insertVal( 2 );
         System.out.println(" Initial Circular Linked List:" + myList.display() + "\n");
 
 System.out.println("*********************** Deleting (3 index's ) ....");
 
-        myList.deletion();
-        myList.deletion();
-        myList.deletion();
+        myList.deleteNext();
+        myList.deleteNext();
+        myList.deleteNext();
         System.out.println("Current Circular Linked List: " + myList.display() + "\n");   // 23,19,17,13, 11, 7
 
-System.out.println("*********************** Searching ....");
+System.out.println("*********************** searching ....");
 
-        System.out.println("Zero index: " + myList.searching(0));   // 23
-        System.out.println("One index: " + myList.searching(1));   // 19
-        System.out.println("Two index: " + myList.searching(2));   // 17
-        System.out.println("Three index: " + myList.searching(3)); //13
-        System.out.println("Four index: " + myList.searching(4));   // 11
-        System.out.println("Five index: " + myList.searching(5) + "\n");   // 7
+        System.out.println("Zero index: " + myList.searchAt(0));   // 23
+        System.out.println("One index: " + myList.searchAt(1));   // 19
+        System.out.println("Two index: " + myList.searchAt(2));   // 17
+        System.out.println("Three index: " + myList.searchAt(3)); //13
+        System.out.println("Four index: " + myList.searchAt(4));   // 11
+        System.out.println("Five index: " + myList.searchAt(5) + "\n");   // 7
 
 System.out.println("*********************** Stepping ....");
         CircularList.Iterator myIt = myList.getIteratorAt( 0 );
