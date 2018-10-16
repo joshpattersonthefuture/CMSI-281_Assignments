@@ -53,7 +53,7 @@ public class CircularList {
          return it;
        }
   //************************************************
-     public void insertion(int value){  //insertion
+     public void insertVal(int value){  //insertion
        //declare Node
        Node insert = new Node(value);
          if(size == 0){
@@ -69,7 +69,7 @@ public class CircularList {
             size++;
      }
 //*************************************************
-    public int searching( int index ) {      //searching
+    public int searchAt( int index ) {      //searching
             if (size==0) {
                   throw new IllegalArgumentException("empty");
             }
@@ -78,7 +78,7 @@ public class CircularList {
             return searcher.getCurrentInt();
     }
 //*************************************************
-    public void deletion() {                     //deletion
+    public void deleteNext() {                     //deletion
             if (size == 1) {
                 current = null;
                 size--;
