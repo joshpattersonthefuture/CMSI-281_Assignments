@@ -12,14 +12,14 @@ System.out.println("*********************** Inserting ....");
         myList.insertVal( 5 );
         myList.insertVal( 3 );
         myList.insertVal( 2 );
-        System.out.println(" Initial Circular Linked List:" + myList.display() + "\n");
+        myList.display();
 
 System.out.println("*********************** Deleting (2,3,23 ) ....");
 
         myList.deleteVal(2);
         myList.deleteVal(3);
         myList.deleteVal(23);
-        System.out.println("Current Circular Linked List: " + myList.display() + "\n");   // 23,19,17,13, 11, 7
+        myList.display();  // 23,19,17,13, 11, 7
 
 System.out.println("*********************** searching ....");
 
