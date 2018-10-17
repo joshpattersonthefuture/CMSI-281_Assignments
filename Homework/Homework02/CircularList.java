@@ -51,8 +51,6 @@ public class CircularList {
          return it;
        }
   //************************************************
-    //inserts a specific value in the Circular List
-    
      public void insertVal(int value){  //insertion
        //declare Node
        Node insert = new Node(value);
@@ -69,9 +67,7 @@ public class CircularList {
             size++;
      }
 //*************************************************
-    //searches and finds a specific value at a given index
-    
-    public int searchAt( int index ) {      
+    public int searchAt( int index ) {      //searching
             if (size==0) {
                   throw new IllegalArgumentException("empty");
             }
@@ -83,10 +79,7 @@ public class CircularList {
     public void step() {                  //again
            current = current.next;
            }
-    
-    
-    //deletes a specific value from the Circular List
-    
+
     public void deleteVal(int value) {
         for ( int i = 0; i < size; i++ ) {
             if ( current.next.data == value ) {
@@ -101,21 +94,12 @@ public class CircularList {
            return size;
     }
 //*************************************************
-    public String display() {
-        String mylist = "";
-            if (size == 0) {
-            return null;
-            }
-        //declare it
-        Iterator displayer = getIteratorAt(0);
-        for (int i = 0; i < size; i++) {
-            if (i < (size - 1)) {
-                mylist += (displayer.getCurrentInt() + ", ");
-            } else {
-                mylist += (displayer.getCurrentInt());
-            }
-            displayer.step();
-        }
-        return mylist;
-    }
+    public void display() {
+        System.out.print("Circular List: ");
+          for (int i = 0; i < size; i++){
+              System.out.print(current.data + " ");
+                current = current.next;
+                }
+                  System.out.println();
+                  }
 }
