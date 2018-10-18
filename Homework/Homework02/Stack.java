@@ -1,13 +1,13 @@
 public class Stack {
 
-    private CircularmyList myList;
+    private CircularList myList;
     private int size;
     private int first;
     int firstInt;
     int nextInt;
 
     public Stack() {
-        myList = new CircularmyList();
+        myList = new CircularList();
         size = 0;
         first = 0;
     }
@@ -18,7 +18,6 @@ public class Stack {
             myList.step();
             current++;
         }
-
     }
     public int peek() {
         if(size == 0) {
