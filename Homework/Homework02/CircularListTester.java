@@ -1,3 +1,6 @@
+//Authors: Joshua Patterson & Rediet Teferi
+//Date: October 13, 2018
+
 public class CircularListTester {
     public static void main( String[] args ) {
         CircularList myList = new CircularList();
@@ -19,7 +22,7 @@ System.out.println("*********************** Deleting (2,3,23 ) ....");
         myList.deleteVal(2);
         myList.deleteVal(3);
         myList.deleteVal(23);
-        myList.display();  // 19,17,13, 11, 7, 5
+        myList.display();  // 19, 17, 13, 11, 7, 5
 
 System.out.println("*********************** searching ....");
 
@@ -46,10 +49,10 @@ System.out.println("*********************** Stepping ....");
         myIt.step();
         System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 5
         myIt.step();
-        System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 19
+        System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 19 circle
         myIt.step();
         System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 17
         myIt.step();
-        System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 113
+        System.out.println( "Current Node is: " + myIt.getCurrentInt() );   // 13
     }
 }
