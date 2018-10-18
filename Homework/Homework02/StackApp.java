@@ -1,3 +1,6 @@
+//Authors: Joshua Patterson & Rediet Teferi
+//Date: October 13, 2018
+
 public class StackApp {
 
       public static void main( String[] args ) {
@@ -27,5 +30,19 @@ public class StackApp {
         newStack.push(66);
         newStack.display(); //66
         System.out.println("Top of stack:" + newStack.peek()); //66
+        newStack.push(77);
+        newStack.display(); //66, 77
+        newStack.push(88);
+        newStack.display();  //66, 77, 88
+        newStack.push(99);
+        newStack.display(); //66, 77, 88, 99
+        System.out.println("Top of stack:" + newStack.peek()); //66
+        newStack.pop();
+        newStack.display(); //66, 77, 888
+        newStack.pop();
+        newStack.display(); //88, 77
+        newStack.pop();
+        newStack.display(); //77
+        System.out.println("Top of stack:" + newStack.peek()); //77
       }
 }
