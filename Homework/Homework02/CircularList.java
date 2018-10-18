@@ -1,3 +1,6 @@
+//Authors: Joshua Patterson & Rediet Teferi
+//Date: October 13, 2018
+
 public class CircularList {
     private Node current;
     private int  size;
@@ -36,13 +39,6 @@ public class CircularList {
         public int getCurrentInt() {
           return currentNode.data;
         }
-        public int getInt() {
-            return current.data;
-      }
-      public int getNextInt() {
-            return current.next.data;
-      }
-
   }
 //***********************************************
     public Iterator getIteratorAt( int index ) {
@@ -56,6 +52,13 @@ public class CircularList {
          }
          return it;
        }
+
+     public int getInt()     {
+           return current.data;
+     }
+     public int getNextInt() {
+           return current.next.data;
+     }
   //************************************************
      public void insertVal(int value){  //insertion
        //declare Node
@@ -86,7 +89,7 @@ public class CircularList {
            current = current.next;
            }
 
-    public void deleteVal(int value) {
+    public void deleteVal(int value) {       //specified value
         for ( int i = 0; i < size; i++ ) {
             if ( current.next.data == value ) {
             current.next = current.next.next;
@@ -95,8 +98,19 @@ public class CircularList {
            step();
         }
     }
+
+//**************************************************
+    public int removeNext() {            //arbitrary , used for stack
+        Node currentNode = current;
+        step();
+        currentNode.next = current.next;
+        int val = getInt();
+        step();
+        size--;
+        return val;
+      }
 //*************************************************
-    public int getSize() {    //useless?
+    public int getSize() {
            return size;
     }
 //*************************************************
