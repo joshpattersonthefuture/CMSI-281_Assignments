@@ -76,12 +76,12 @@ public class CircularList {
             size++;
      }
 //*************************************************
-    public int searchAt( int index ) {      //searching
+    public int searchAt( int value ) {      //searching
             if (size==0) {
                   throw new IllegalArgumentException("empty");
             }
             //declare it
-            Iterator searcher = getIteratorAt(index);
+            Iterator searcher = getIteratorAt(value);
             return searcher.getCurrentInt();
     }
 //*************************************************
