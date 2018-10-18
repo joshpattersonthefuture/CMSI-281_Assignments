@@ -102,13 +102,13 @@ public class CircularList {
 //**************************************************
     public int removeNext() {            //arbitrary , used for stack
         Node currentNode = current;
-        step();
+              step();
         currentNode.next = current.next;
-        int val = getInt();
-        step();
-        size--;
-        return val;
-      }
+              int val = getInt();
+                   step();
+            size--;
+            return val;
+    }
 //*************************************************
     public int getSize() {
            return size;
@@ -121,5 +121,5 @@ public class CircularList {
                 current = current.next;
                 }
                   System.out.println();
-                  }
+    }
 }
