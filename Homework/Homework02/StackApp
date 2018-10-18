@@ -24,9 +24,8 @@ public class StackApp {
         newStack.display(); //22
         newStack.pop();
         newStack.display(); //throw empty
-        System.out.println(newStack.peek()); //11
         newStack.push(66);
         newStack.display(); //66
-        System.out.println(newStack.peek()); //66
+        System.out.println("Top of stack:" + newStack.peek()); //66
       }
 }
