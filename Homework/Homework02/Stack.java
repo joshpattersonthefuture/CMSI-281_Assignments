@@ -1,54 +1,53 @@
 public class Stack {
 
-    private CircularList list;
+    private CircularmyList myList;
     private int size;
     private int first;
+    int firstInt;
+    int nextInt;
 
     public Stack() {
-        list = new CircularList();
+        myList = new CircularmyList();
         size = 0;
         first = 0;
     }
 
-    private void setCurrentBefore(int data) {
-        int counter = 0;
-        while(list.getNextInt() != data && counter < size) {
-            list.step();
-            counter++;
+    private void prevCurrent(int value) {
+        int current = 0;
+        while(myList.getNextInt() != value && current < size) {
+            myList.step();
+            current++;
         }
 
     }
+    public int peek() {
+        if(size == 0) {
+          System.out.println("empty");
+        }
+        return myList.getInt();
+    }
 
-    public void push(int data) {
-        first = data;
+    public void push(int value) {
+        first = value;
         size++;
-        list.insertVal(data);
+        myList.insertVal(value);
     }
 
     public int pop() {
         if (size == 0) {
           System.out.println("empty");
         }
-
-        int tempInt, tempIntNext;
-        tempInt = first;
-        tempIntNext = list.getNextInt();
-        setCurrentBefore(tempInt);
-        list.removeNext();
-        setCurrentBefore(tempIntNext);
+        firstInt = first;
+        nextInt = myList.getNextInt();
+        prevCurrent(firstInt);
+        myList.removeNext();
+        prevCurrent(nextInt);
         size--;
-        first = list.getInt();
-        return tempInt;
+        first = myList.getInt();
+        return firstInt;
     }
 
-    public int peek() {
-        if(size == 0) {
-          System.out.println("empty");
-        }
-        return list.getInt();
-        }
-
     public void display() {
-        list.display();
+        myList.display();
     }
 }
