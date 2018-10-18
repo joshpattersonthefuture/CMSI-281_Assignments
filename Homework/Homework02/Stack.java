@@ -1,3 +1,6 @@
+//Authors: Joshua Patterson & Rediet Teferi
+//Date: October 13, 2018
+
 public class Stack {
 
     private CircularList myList;
