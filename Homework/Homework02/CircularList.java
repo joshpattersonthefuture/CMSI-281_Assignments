@@ -36,6 +36,12 @@ public class CircularList {
         public int getCurrentInt() {
           return currentNode.data;
         }
+        public int getInt() {
+            return current.data;
+      }
+      public int getNextInt() {
+            return current.next.data;
+      }
 
   }
 //***********************************************
