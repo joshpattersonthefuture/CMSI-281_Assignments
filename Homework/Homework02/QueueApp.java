@@ -1,3 +1,5 @@
+//Authors: Joshua Patterson & Rediet Teferi
+//Date: October 15, 2018
 class QueueApp{
   public static void main(String[] args){
 
