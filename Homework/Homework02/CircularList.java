@@ -110,6 +110,11 @@ public class CircularList {
             return val;
     }
 //*************************************************
+    public void deleteAt(int index) {    //specified index
+        Iterator pointer = getIteratorAt(index - 1);
+        pointer.currentNode.next = pointer.currentNode.next.next;
+    }
+ //********************************************
     public int getSize() {
            return size;
     }
