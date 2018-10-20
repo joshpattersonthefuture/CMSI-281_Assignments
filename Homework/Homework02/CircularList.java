@@ -111,8 +111,8 @@ public class CircularList {
     }
 //*************************************************
     public void deleteAt(int index) {    //specified index
-        Iterator pointer = getIteratorAt(index - 1);
-        pointer.currentNode.next = pointer.currentNode.next.next;
+        Iterator deleteIndex = getIteratorAt(index - 1);
+        deleteIndex.currentNode.next = deleteIndex.currentNode.next.next;
     }
  //********************************************
     public int getSize() {
