@@ -1,4 +1,4 @@
-//Rediet Teferi
+//Rediet Teferi & Joshua Patterson
 // October 15, 2018
 /* This Java file takes a dequeue and displays the contents
  of the dequeue */
