@@ -1,5 +1,6 @@
-//Authors: Joshua Patterson & Rediet Teferi
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
 //Date: October 17, 2018
+//Purpose: Tester for Josephus.java
 
 public class JosephusTester {
     public static void main( String[] args ) {
