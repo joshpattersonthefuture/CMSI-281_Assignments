@@ -1,5 +1,8 @@
-//Authors: Joshua Patterson & Rediet Teferi
-//Date: October 15, 2018
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
+//Date: October 13, 2018
+//Purpose: This Java file takes a queue and displays the contents
+// of the queue 
+
 class QueueApp{
   public static void main(String[] args){
 
@@ -29,4 +32,4 @@ class QueueApp{
 
     theQueue.contentDisplayer();
     }
-  }
+}
