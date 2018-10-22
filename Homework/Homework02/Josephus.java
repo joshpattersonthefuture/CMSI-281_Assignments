@@ -81,8 +81,8 @@ public class Josephus {
             myList.insertVal(i);
             myList.size++;
         }
-        String Out = "Out of the Circle are #'s: ";
-        String End = "There is a circle of: " + circleSize + ". We are counting off by : " + countOff + ". Last # in the circle: " ;
+        String Out = "Numbers that are out of the Circle: ";
+        String End = "The circle size is: " + circleSize + ".\nWe are counting off by : " + countOff + ".\nLast Number in the circle: ";
         Iterator rouletter = myList.getIteratorAt(0);
         while (myList.size > 2) {
                 for (int j = 0; j < countOff; j++) {
