@@ -1,5 +1,6 @@
-//Authors: Joshua Patterson & Rediet Teferi
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
 //Date: October 13, 2018
+//Purpose: Tester for Stack.java
 
 public class StackApp {
 
