@@ -76,13 +76,21 @@ public class CircularList {
             size++;
      }
 //*************************************************
-    public int searchAt( int value ) {      //searching
+    public int searchAt( int value ) {      //searching for value
             if (size==0) {
                   throw new IllegalArgumentException("empty");
             }
             //declare it
             Iterator searcher = getIteratorAt(value);
             return searcher.getCurrentInt();
+    }
+   
+   public int search(int index) {           //searching for index (Used for josephus)
+        if (size == 0) {
+            throw new IllegalArgumentException("empty");
+        }
+        Iterator searchIndex = getIteratorAt(index);
+        return searchIndex.getCurrentInt();
     }
 //*************************************************
     public void step() {                  //again
