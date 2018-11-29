@@ -1,3 +1,9 @@
+// File Name:  BinaryTree.java                                                 *
+// Project: Homework 3
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
+//Date: November 27, 2018
+//Purpose: The purpose of this is to implement a in-order traverse method
+
 public class BinaryTree {
   public static void inOrderPrinter( BinaryTreeNode node ) {
        if( node == null ) {
